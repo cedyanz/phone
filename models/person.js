@@ -4,11 +4,6 @@ const uniqueValidator = require('mongoose-unique-validator')
 mongoose.set('useFindAndModify', false)
 mongoose.set('useCreateIndex', true);
 
-if (process.argv.length < 3) {
-  console.log('Please provide the password as an argument: node mongo.js <password>')
-  process.exit(1)
-}
-
 
 
 const url = process.env.MONGODB_URI
